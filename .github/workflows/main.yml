@@ -3,6 +3,8 @@ name: Lint Check
 on:
   push:
     branches: [ "main", "Developer" ]
+  pull_request:
+    branches: [ "main", "Developer" ]
 
 jobs:
   lint:
@@ -18,10 +20,22 @@ jobs:
         with:
           node-version: 18
 
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
       - name: Install dependencies
         run: npm install
         working-directory: Academic-Notification
 
       - name: Run ESLint
         run: npm run lint
+        working-directory: Academic-Notification
+
+      - name: Run tests
+        run: npm test
         working-directory: Academic-Notification
