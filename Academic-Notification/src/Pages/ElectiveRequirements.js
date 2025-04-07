@@ -41,7 +41,7 @@ export default function ElectiveRequirements(){
         <div class="elective-requirements">
             {/* Header */}
             <div className="header">
-                <FiArrowLeft className="back-button" onClick={() =>navigate(`/degree-information/${studentID}`)} />
+                <FiArrowLeft className="back-button" onClick={() => {navigate(-1)}} />
                 <h2 className='header-title'>Elective Requirements</h2>
                 <FiSettings className="setting-icon" />
             </div>
