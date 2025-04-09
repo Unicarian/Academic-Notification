@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useStudentData } from '../hooks/useStudentData';
 import '../styles.css';
 import { FiArrowLeft, FiSettings } from 'react-icons/fi';
@@ -10,24 +10,40 @@ import NavBar from '../components/NavBar';
 
 export default function DegreeInfo() {
   const { studentID } = useParams();
-  const { studentData, loading, error } = useStudentData(studentID);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const program = searchParams.get('program');
+  const { studentData, loading, error } = useStudentData(studentID,program);
+ 
+  if (loading) {
+    return <div>Loading student data...</div>;
+  }
 
-  if (loading) return <div>Loading student data...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
-  const totalRequirements = studentData.requirements || 0;
-  const satisfiedRequirements = studentData.satisfied || 0;
+  const totalRequirements = studentData.req_count;
+  const satisfiedRequirements = studentData.req_satisfied;
+
   const remainingRequirements = totalRequirements - satisfiedRequirements;
+  console.log(program)
+  console.log(studentID)
 
   const COLORS = ['#00274C', '#73BAE8'];
 
-  const getGroupClass = (group) => {
-    switch (group.rqrmnt_group) {
-      case 'general_education': return 'general-education-group';
-      case 'major_requirements': return 'major-requirements-group';
-      case 'electives': return 'electives-group';
-      default: return '';
+
+  //const getGroupClass = (group) => {
+   // switch (group.rqrmnt_group) {
+    //  case 'general_education': return 'general-education-group';
+    //  case 'major_requirements': return 'major-requirements-group';
+    //  case 'electives': return 'electives-group';
+     // default: return '';
+  function RequirementLists({ jsonData }) { 
+    //console.log(jsonData)
+    if (!jsonData || !jsonData.groups) {
+      return { satisfiedGroups: [], unsatisfiedGroups: [] }; // Return empty arrays if no data
+
     }
   };
 
@@ -44,50 +60,59 @@ export default function DegreeInfo() {
     <div className="degree-progress-info full-page-layout">
       <div className="main-content">
         <div className="header">
-          <FiArrowLeft className="back-button" onClick={() => navigate(`/degree-progress/${studentID}`)} />
+          <FiArrowLeft className="back-button" onClick={() => {navigate(-1)}} />
           <h2 className="header-title">Degree Information {studentID}</h2>
           <FiSettings className="setting-icon" />
         </div>
-
-        <div className="NavbarHolder">
-          <NavBar />
-          <div className="content-justify">
-            <div className="scrollable-box">
-              <div className="box-grid">
-                {studentData.groups?.flatMap((group) =>
-                  group.requirements.map((requirement, index) => (
-                    <button
-                      key={`${group.rqrmnt_group}-${index}`}
-                      className={`boxbutton ${getGroupClass(group)}`}
-                      onClick={() =>
-                        navigate(
-                          `/elective-requirements/${studentID}/${group.rqrmnt_group}/${requirement.requirement}`,
-                          {
-                            state: {
-                              studentData,
-                              group,
-                              requirement,
-                            },
-                          }
-                        )
-                      }
-                    >
-                      <div className="requirement-content">
-                        <div className="requirement-descr">
-                          {requirement.descr || group.label}
-                        </div>
-                        <div className="requirement-status">
-                          {requirement.status ? (
-                            <p dangerouslySetInnerHTML={{ __html: requirement.status }} />
-                          ) : (
-                            <p>Status not available</p>
-                          )}
-                        </div>
-                      </div>
-                    </button>
-                  ))
-                )}
+<div className="NavbarHolder">
+  <NavBar />
+  <div className="content-justify">
+    <div className="scrollable-box">
+      <div className="box-grid">
+        {studentData.groups?.flatMap((group) =>
+          group.requirements.map((requirement, index) => (
+            <button
+              key={`${group.rqrmnt_group}-${index}`}
+              className={`boxbutton ${getGroupClass(group)}`}
+              onClick={() =>
+                navigate(
+                  `/elective-requirements/${studentID}?reqGroup=${group.rqrmnt_group}&reqNum=${requirement.requirement}`,
+                  {
+                    state: {
+                      studentData,
+                      group,
+                      requirement,
+                    },
+                  }
+                )
+              }
+            >
+              <div className="requirement-content">
+                <div className="requirement-descr">
+                  {requirement.descr || group.label}
+                </div>
+                <div className="requirement-status">
+                  {requirement.rl_status ? (
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          requirement.rl_status +
+                          (requirement.rl_descr ? `<br/>${requirement.rl_descr}` : ""),
+                      }}
+                    />
+                  ) : (
+                    <p>Status not available</p>
+                  )}
+                </div>
               </div>
+            </button>
+          ))
+        )}
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
 
             <div className="requirement-progress">
@@ -122,4 +147,6 @@ export default function DegreeInfo() {
       </div>
     </div>
   );
+
 }
+
