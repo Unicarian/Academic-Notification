@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiSettings } from 'react-icons/fi';
-import { useStudentData } from '../hooks/useStudentData';
+import { useStudentData, useStudentPrograms } from '../hooks/useStudentData';
 import '../styles.css';
 import user from '../img/user.png';
 
@@ -9,11 +9,23 @@ export default function DegreeProgress() {
   const { studentID } = useParams();
   const navigate = useNavigate();
   const { studentData } = useStudentData(studentID);
-  const studentNames = ['Bob Ross', 'Joe Demagio', 'Cameron Diaz'];
+  const studentNames = ['Bob Ross', 'Joe Demagio', 'Cameron Diaz', 'John Johnson', 'Jake Jacobs', 'Ron Rocky', 'Adam Adams', 'Samantha Smith', 'Peter Parker', 'Ilsa Issac'];
   const graduationDates = [2024, 2025, 2026, 2027]; 
+  const { studentProgramData, loading, error } = useStudentPrograms(studentID);
+  
+  console.log(useStudentPrograms(studentID));
 
-  function RandomSelect(list) {
-    const item = list[Math.floor(Math.random() * list.length)];
+  if (loading) {
+    console.log("loading 17");
+    return <div>Loading student data...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  function PseudoRandomSelect(list) {
+    const item = list[studentID%list.length];
     return item;
   }
 
@@ -53,7 +65,7 @@ export default function DegreeProgress() {
         </div>
         <div className="student-details">
           <h3>
-            <strong>Student Name:</strong> {RandomSelect(studentNames)}
+            <strong>Student Name:</strong> {PseudoRandomSelect(studentNames)}
           </h3>
           <h3>
             <strong>Student ID:</strong> {studentID}
@@ -62,26 +74,25 @@ export default function DegreeProgress() {
             <strong>Status:</strong> {studentData && <IdentifyType jsonData={studentData} />}
           </h3>
           <h3>
-            <strong>Expected Graduation Date:</strong> Spring {RandomSelect(graduationDates)}
+            <strong>Expected Graduation Date:</strong> Spring {PseudoRandomSelect(graduationDates)}
           </h3>
         </div>
       </div>
 
       <div className="degree-details">
         <h3>Majors & Minors</h3>
-        <div className="major">
-          <span>Major: Electrical Engineering</span>
+        {studentProgramData.map((program) => (
+          <div className="major"> 
+          <span>{program.programName}</span>
           <button
             className="credit-report"
-            onClick={() => navigate(`/degree-information/${studentID}`, { state: { studentData } })}
+            onClick={() => navigate(`/degree-information/${studentID}?program=${program.programCode}`, { state: { studentData } })}
           >
             Credit Report
           </button>
         </div>
-        <div className="major">
-          <span>Major: Chemical Engineering</span>
-          <button className="credit-report">Credit Report</button>
-        </div>
+        ))}
+        
       </div>
 
       <button className="summary-report">Generate Credit Summary Report</button>

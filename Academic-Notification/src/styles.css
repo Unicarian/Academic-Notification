@@ -108,19 +108,35 @@
     width: 200px;
     height: 100vh;
     background: #001f3f;
+    border: #00274C;
+    border-width: 2px;
     transition: width 0.3s;
     padding: 10px;
     color: white;
     overflow: hidden;
 }
+.full-page-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  
+  .main-content {
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
 
 .navbar.collapsed {
-    width: 45px;
+    width: 50px;
+    padding: 5px;
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
+    font: 1.5em;
 }
 
 .navbar a {
@@ -284,6 +300,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: top;
     font-size: 2.5em;
+}
+
+
+
+.requirement-progress { /*graph container*/
+    display: flex;
+
 }
 
 /* [END] Degree Info Page ============================================================================================================================== */
