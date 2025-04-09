@@ -90,7 +90,7 @@ export default function DegreeInfo() {
             className="boxbutton"
             onClick={() =>
               navigate(
-                `/elective-requirements/${studentID}/${group.rqrmnt_group}`,
+                `/elective-requirements/${studentID}?reqGroup=${group.rqrmnt_group}&reqNum=${requirement.requirement}`,
                 {
                   state: {
                     studentData,
