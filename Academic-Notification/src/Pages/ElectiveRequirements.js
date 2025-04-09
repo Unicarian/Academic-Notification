@@ -1,17 +1,17 @@
 import React from "react";
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import '../styles.css';
 import { FiArrowLeft, FiSettings } from 'react-icons/fi';
 import NavBar from "../components/NavBar";
 
-
-
-
+import { useRequirementCourses } from '../hooks/useStudentData';
 
 export default function ElectiveRequirements(){
-    const { studentID } = useParams('studentID');
-    const { requirement } = useParams('requirement');
 
+    const [searchParams] = useSearchParams();
+    const { studentID } = useParams('studentID');
+    const { reqGroup } = searchParams.get('reqGroup');
+    const { reqNum } = searchParams.get('reqNum');
 
     const handleWishlist = e => {
         //Add wishlist interaction here
@@ -28,33 +28,46 @@ export default function ElectiveRequirements(){
     }
 
 
-
     const navigate = useNavigate();
-    
-    const PlaceholderCourses = [
-        { name: `${requirement} Course 1`, desc: `Interesting things about ${requirement} course 1` },
-        { name: `${requirement} Course 2`, desc: `Interesting things about ${requirement} course 2 but really really long zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz` },
-        { name: `${requirement} Course 3`, desc: `Interesting things about ${requirement} course 3` }
-    ];
 
+    const { reqProgramInfo, loading, error } = useRequirementCourses(reqGroup,reqNum);
+
+    if (loading) {
+        console.log("loading 35");
+        return <div>Loading course data...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
+
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
+    console.log(reqProgramInfo);
 
     return(
         <div class="elective-requirements">
             {/* Header */}
             <div className="header">
-                <FiArrowLeft className="back-button" onClick={() =>navigate(`/degree-information/${studentID}`)} />
+                <FiArrowLeft className="back-button" onClick={() => {navigate(-1)}} />
                 <h2 className='header-title'>Elective Requirements</h2>
                 <FiSettings className="setting-icon" />
             </div>
-
-            <div class="content-justify">
-                <div class="scrollable-box">
-                    <div class="course-list">
-                        {PlaceholderCourses.map((course) => (
-                            <CourseInfo name={course.name} desc={course.desc} />
-                        ))}
-                    </div>
-                </div>
+            <div class="course-list">
+                {reqProgramInfo.map((course) => (
+                    <CourseInfo name={course.name} desc={course.desc} />
+                ))}
             </div>
         </div>
     );

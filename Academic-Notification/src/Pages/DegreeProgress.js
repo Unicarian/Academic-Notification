@@ -54,7 +54,7 @@ export default function DegreeProgress() {
     <div className="degree-progress">
       {/* Header */}
       <div className="header">
-        <FiArrowLeft className="back-button" onClick={() => navigate('/')} />
+        <FiArrowLeft className="back-button" onClick={() => {navigate(-1)}} />
         <h2 className="header-title">Degree Progress</h2>
         <FiSettings className="setting-icon" />
       </div>
