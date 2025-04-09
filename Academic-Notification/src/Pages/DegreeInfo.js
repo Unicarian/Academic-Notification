@@ -114,7 +114,7 @@ export default function DegreeInfo() {
             </div>
           </div>
         </div>
-      </div>
+      
 
       <div className="requirement-progress">
         <ChartContainer
@@ -146,6 +146,7 @@ export default function DegreeInfo() {
           height={200}
         />
       </div>
+    </div>
     </div>
   );
 }
