@@ -314,15 +314,39 @@ li {
     font-size: 2.5em;
 }
 
-
+.requirement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0;
+    height: 100%;
+  }
+  
+  .requirement-descr {
+    font-weight: 500;  /* Makes the description bold */
+    font-size: 2.2rem;  /* Adjust as needed */
+  }
+  
+  .requirement-status {
+    font-weight: normal;  /* Makes the status text normal */
+    font-size: 0.875rem;  /* Adjust as needed */
+    margin-top: auto;  /* Pushes it to the bottom */
+  }
 
 .requirement-progress { /*graph container*/
     display: flex;
 
 }
 
+.general-education-group {
+    background-color: #3D85BB; /* Light blue */
+  }
+  
+  .major-requirements-group {
+    background-color: #00274C; /* dark blue */
+  }
+  
+  .electives-group {
+    background-color: #73BAE8; /* Lightestt blue */
+  }
 /* [END] Degree Info Page ============================================================================================================================== */
-
-
-
- 
