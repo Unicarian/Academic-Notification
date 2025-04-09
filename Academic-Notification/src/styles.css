@@ -350,3 +350,28 @@ li {
     background-color: #73BAE8; /* Lightestt blue */
   }
 /* [END] Degree Info Page ============================================================================================================================== */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* [START] Elective Requirements Page ======================================================================================================================= */
+.course-info{
+    border: solid 1px #000000;
+    border-radius: 25px;
+    margin: 10px;
+    background: #fff;
+}
+.course-info h2{
+    padding: 0 4px;
+    margin: 2px;
+}
+.course-info p{
+    padding: 0 4px 2em 4px;
+    margin: 2px;
+}
+.course-info .wishlist-button{
+    margin: 4px 4px;
+    background-color: #0C598E;
+    color: white;
+    margin-left: 80%;
+}
+

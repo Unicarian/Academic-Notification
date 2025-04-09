@@ -29,12 +29,14 @@ export default function DegreeProgress() {
     return item;
   }
 
+
   function IdentifyType({ jsonData }) {
     if (!jsonData || !jsonData.careers || jsonData.careers.length === 0) {
       return <p>Career type not identified. Invalid Data.</p>;
     }
 
     const careerCode = jsonData.careers[0].career;
+
 
     switch (careerCode) {
       case 'UGRD':
