@@ -106,7 +106,7 @@
 
 .navbar {
     width: 200px;
-    height: 100vh;
+    height: 100%;
     background: #001f3f;
     border: #00274C;
     border-width: 2px;

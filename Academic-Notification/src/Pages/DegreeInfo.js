@@ -26,7 +26,7 @@ export default function DegreeInfo() {
   const totalRequirements = studentData.req_count;
   const satisfiedRequirements = studentData.req_satisfied;
   const remainingRequirements = totalRequirements - satisfiedRequirements;
-  
+
   console.log(program);
   console.log(studentID);
 
@@ -112,41 +112,42 @@ export default function DegreeInfo() {
                 )}
               </div>
             </div>
-          </div>
+          
+
+
+        <div className="requirement-progress">
+          <ChartContainer
+            width={500}
+            height={300}
+            series={[
+              {
+                data: uData,
+                label: 'Credits',
+                type: 'bar',
+                color: COLORS[0],
+              },
+            ]}
+            xAxis={[{ scaleType: 'band', data: xLabels }]}
+          >
+            <BarPlot />
+          </ChartContainer>
+
+          <PieChart
+            series={[
+              {
+                data: [
+                  { id: 0, value: percentRemaining, label: 'Remaining', color: COLORS[0] },
+                  { id: 1, value: 100 - percentRemaining, label: 'Completed', color: COLORS[1] },
+                ],
+              },
+            ]}
+            width={400}
+            height={200}
+          />
         </div>
-      
-
-      <div className="requirement-progress">
-        <ChartContainer
-          width={500}
-          height={300}
-          series={[
-            {
-              data: uData,
-              label: 'Credits',
-              type: 'bar',
-              color: COLORS[0],
-            },
-          ]}
-          xAxis={[{ scaleType: 'band', data: xLabels }]}
-        >
-          <BarPlot />
-        </ChartContainer>
-
-        <PieChart
-          series={[
-            {
-              data: [
-                { id: 0, value: percentRemaining, label: 'Remaining', color: COLORS[0] },
-                { id: 1, value: 100 - percentRemaining, label: 'Completed', color: COLORS[1] },
-              ],
-            },
-          ]}
-          width={400}
-          height={200}
-        />
       </div>
     </div>
     </div>
+        </div>
   );
 }
