@@ -58,3 +58,32 @@ export function useStudentPrograms(studentID) {
 
     return { studentProgramData, loading, error };
 }
+
+export function useRequirementCourses(reqGroup,reqNum) {
+    const [reqProgramInfo, setReqProgramInfo] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchReqProgramInfo = async () => {
+            try {
+                const response = await fetch(`http://theinfinity.rocks:8227/getCourseFulfillmentOptions?reqGroup=${reqGroup}&requirement=${reqNum}`);
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch programs for req: ${reqGroup} : ${reqNum}`);
+                }
+                const data = await response.json();
+                setReqProgramInfo(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        if (reqGroup,reqNum) {
+            fetchReqProgramInfo();
+        }
+    }, [reqGroup,reqNum]);
+
+    return { reqProgramInfo, loading, error };
+}
