@@ -15,7 +15,7 @@ function App() {
         <Route path="/degree-progress/:studentID" element={<DegreeProgress />} />
         <Route path="/Course-Selection/:studentID" element={<CourseSelection />} />
         <Route path="/degree-information/:studentID" element={<DegreeInfo/>} />
-        <Route path="/elective-requirements/:studentID/:requirement" element={<ElectiveRequirements/>} /> 
+        <Route path="/elective-requirements/:studentID" element={<ElectiveRequirements/>} />
         <Route path="/fake-page" element={<FakePage />} />
       </Routes>
     </Router>

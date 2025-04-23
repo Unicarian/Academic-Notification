@@ -1,0 +1,1550 @@
+[
+  {
+    "Acad Plan": "ACC-MIN",
+    "Title": "Accounting",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ACCT-BS",
+    "Title": "Accounting",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "ACH-MIN",
+    "Title": "Applied Chemistry",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "AED-BA",
+    "Title": "Art Education",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "ANT-BA",
+    "Title": "Anthropology",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "ANT-MIN",
+    "Title": "Anthropology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ANV-BS",
+    "Title": "Animal & Vet Science",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ANV-MIN",
+    "Title": "Animal & Vet Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "AQA-MIN",
+    "Title": "Aquaculture",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ARC-MIN",
+    "Title": "Archaeology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ARH-BA",
+    "Title": "Art History",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "ARH-MIN",
+    "Title": "Art History",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "AST-MIN",
+    "Title": "Astronomy",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ATR-BS",
+    "Title": "Athletic Training",
+    "Degree": "BS",
+    "College": "Education & Human Development"
+  },
+  {
+    "Acad Plan": "BCH-BS",
+    "Title": "Biochemistry",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "BCH-MIN",
+    "Title": "Biochemistry",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BCS-BCS",
+    "Title": "Bachelor of College Studies",
+    "Degree": "BCS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "BEN-BS",
+    "Title": "Bioengineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "BET-BS",
+    "Title": "Electrical Engineering Tech",
+    "Degree": "BS",
+    "College": "School of Engineering Tech"
+  },
+  {
+    "Acad Plan": "BET-MIN",
+    "Title": "Electrical Engineering Tech",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BIE-BS",
+    "Title": "Biomedical Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "BIE-MIN",
+    "Title": "Biomedical Engineering",
+    "Degree": "",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "BIN-MIN",
+    "Title": "Bioinstrumentation",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BIO-BA",
+    "Title": "Biology",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "BIO-BS",
+    "Title": "Biology",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "BIO-MIN",
+    "Title": "Biology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BISM-BS",
+    "Title": "Bus Info Sys & Security Mgmt",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "BME-BM",
+    "Title": "Music Education",
+    "Degree": "BM",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "BMT-BS",
+    "Title": "Mechanical Engineering Tech",
+    "Degree": "BS",
+    "College": "School of Engineering Tech"
+  },
+  {
+    "Acad Plan": "BOT-BA",
+    "Title": "Botany",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "BOT-BS",
+    "Title": "Botany",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "BOT-MIN",
+    "Title": "Botany",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BST-BS",
+    "Title": "Survey Engineering Technology",
+    "Degree": "BS",
+    "College": "School of Engineering Tech"
+  },
+  {
+    "Acad Plan": "BST-MIN",
+    "Title": "Survey Engineering Technology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BUA-BS",
+    "Title": "Business Administration",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "BUA-MIN",
+    "Title": "Business Administration",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "BUA-UND",
+    "Title": "Business Admin Undeclared",
+    "Degree": "",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "BUS-BUS",
+    "Title": "University Studies",
+    "Degree": "BUS",
+    "College": "Div Lifelong Learning"
+  },
+  {
+    "Acad Plan": "CAL-MIN",
+    "Title": "Constitution and American Law",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CAN-MIN",
+    "Title": "Canadian Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CAP-BA",
+    "Title": "Creative Arts",
+    "Degree": "BA",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "CAP-MIN",
+    "Title": "Creative Arts",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CEN-BS",
+    "Title": "Computer Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "CEN-MIN",
+    "Title": "Computer Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CHE-BS",
+    "Title": "Chemical Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "CHF-BS",
+    "Title": "Child Develop & Family Relat",
+    "Degree": "BS",
+    "College": "Education & Human Development"
+  },
+  {
+    "Acad Plan": "CHF-MIN",
+    "Title": "Child Develop & Family Relat",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CHY-BA",
+    "Title": "Chemistry",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "CHY-BS",
+    "Title": "Chemistry",
+    "Degree": "BS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "CHY-MIN",
+    "Title": "Chemistry",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CIE-BS",
+    "Title": "Civil Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "CLM-AS",
+    "Title": "Conservation Law & Outdoor Mgm",
+    "Degree": "AS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "CLM-MIN",
+    "Title": "Climate Sciences",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CLW-MIN",
+    "Title": "Conservation Law",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "COA-MIN",
+    "Title": "Coaching",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "COM-BA",
+    "Title": "Communication",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "COS-BA",
+    "Title": "Computer Science",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "COS-BS",
+    "Title": "Computer Science",
+    "Degree": "BS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "COS-MIN",
+    "Title": "Computer Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CRJ-BA",
+    "Title": "Criminal Justice",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "CRJ-MIN",
+    "Title": "Criminal Justice",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CRW-MIN",
+    "Title": "Creative Writing",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CSB-BS",
+    "Title": "Computer Science and Business",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "CSD-BA",
+    "Title": "Communication Sci & Disorders",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "CSD-MIN",
+    "Title": "Communication Sci & Disorders",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CST-MIN",
+    "Title": "Classical Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CTE-BS",
+    "Title": "Construction Engineering Tech",
+    "Degree": "BS",
+    "College": "School of Engineering Tech"
+  },
+  {
+    "Acad Plan": "CTE-MIN",
+    "Title": "Construction Engineering Tech",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "CWR-MIN",
+    "Title": "Creative Writing",
+    "Degree": "",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "DAN-MIN",
+    "Title": "Dance",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EAI-MIN",
+    "Title": "Engineering Applications of AI",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ECO-BA",
+    "Title": "Economics",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ECO-BS",
+    "Title": "Economics-BS",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ECO-MIN",
+    "Title": "Economics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EDE-BS",
+    "Title": "Elementary Education",
+    "Degree": "BS",
+    "College": "Education & Human Development"
+  },
+  {
+    "Acad Plan": "EDS-BS",
+    "Title": "Secondary Education",
+    "Degree": "BS",
+    "College": "Education & Human Development"
+  },
+  {
+    "Acad Plan": "EDU-MIN",
+    "Title": "Education",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EEN-MIN",
+    "Title": "Engineering Entrepreneurial",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EES-BS",
+    "Title": "Ecol & Environmental Sci",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "EES-MIN",
+    "Title": "Ecol & Environmental Sci",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EGL-MIN",
+    "Title": "Engineering Leadership & Mgmt",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EGS-BS",
+    "Title": "Environmental GIS",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "ELE-BS",
+    "Title": "Electrical Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "ELE-MIN",
+    "Title": "Electrical Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENE-MIN",
+    "Title": "Environmental Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENG-BA",
+    "Title": "English",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "ENG-MIN",
+    "Title": "English",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENH-BS",
+    "Title": "Environmental Horticulture",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ENH-MIN",
+    "Title": "Environmental Horticulture",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENM-MIN",
+    "Title": "English",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENT-MIN",
+    "Title": "Entomology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ENV-BS",
+    "Title": "Environmental Studies",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "ENV-MIN",
+    "Title": "Environmental Ethics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EPS-BS",
+    "Title": "Engineering Physics",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "EQS-MIN",
+    "Title": "Equine Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ERS-BA",
+    "Title": "Earth and Climate Sciences",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ERS-BS",
+    "Title": "Earth and Climate Sciences",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ERS-MIN",
+    "Title": "Earth Sciences",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ESC-MIN",
+    "Title": "Environmental Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ESP-MIN",
+    "Title": "Ethics & Political Philosophy",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "EXS-MIN",
+    "Title": "Exercise Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FAS-MIN",
+    "Title": "Franco American Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FES-MIN",
+    "Title": "Forest Ecosystem Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FIE-BA",
+    "Title": "Financial Economics-BA",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "FIE-BS",
+    "Title": "Financial Economics",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "FIH-MIN",
+    "Title": "Fisheries",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FIN-BS",
+    "Title": "Finance",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "FIV-MIN",
+    "Title": "Film & Video",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FLK-MIN",
+    "Title": "Folklore and Traditional Arts",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FOS-MIN",
+    "Title": "Food Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FPR-MIN",
+    "Title": "Forest Products",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FRE-BA",
+    "Title": "French",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "FRE-MIN",
+    "Title": "French",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FRM-MIN",
+    "Title": "Parks, Recreation, and Tourism",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "FSN-BS",
+    "Title": "Food Science & Human Nutrition",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "FTY-BS",
+    "Title": "Forestry",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "GDD-MIN",
+    "Title": "Game Design and Development",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "GEO-MIN",
+    "Title": "Geography",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "GIS-MIN",
+    "Title": "Geographic Info Sys App",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "GRD-MIN",
+    "Title": "Graphic Design",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "GRN-MIN",
+    "Title": "Graphic Novel",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "HCD-BS",
+    "Title": "Human Centered Tech Design",
+    "Degree": "BS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "HCI-MIN",
+    "Title": "Human-Computer Interaction",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "HDC-BA",
+    "Title": "Human Dimensions of Climate Ch",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "HDC-MIN",
+    "Title": "Human Dimensions of Climate Ch",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "HON",
+    "Title": "Honors ",
+    "Degree": "Honors College",
+    "College": ""
+  },
+  {
+    "Acad Plan": "HTY-BA",
+    "Title": "History",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "HTY-MIN",
+    "Title": "History",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "HUN-MIN",
+    "Title": "Human Nutrition",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "IAO-BA",
+    "Title": "International Affairs",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "IAO-MIN",
+    "Title": "International Affairs",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "IBO-BA",
+    "Title": "Integrative Biology",
+    "Degree": "BA",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "IBO-MIN",
+    "Title": "Integrative Biology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "IDS-MIN",
+    "Title": "Interdisciplinary Disab Stds",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "INE-MIN",
+    "Title": "Innovation",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "INS-BA",
+    "Title": "Int St in Multimodal Interact",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "JAZ-MIN",
+    "Title": "Jazz Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "JOU-BA",
+    "Title": "Journalism",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "JOU-MIN",
+    "Title": "Journalism",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "JST-MIN",
+    "Title": "Judaic Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "KPE-BS",
+    "Title": "Kinesiology & Physical Educ",
+    "Degree": "BS",
+    "College": "Education & Human Development"
+  },
+  {
+    "Acad Plan": "LAS-BUS",
+    "Title": "University Studies",
+    "Degree": "BUS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "LBS-MIN",
+    "Title": "Labor Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "LDR-MIN",
+    "Title": "Leadership Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "LES-MIN",
+    "Title": "Legal Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "LIB-AA",
+    "Title": "Liberal Studies",
+    "Degree": "AA",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "MAR-BS",
+    "Title": "Marine Biology",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "MAS-BS",
+    "Title": "Marine Science",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "MAT-BA",
+    "Title": "Mathematics",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "MAT-BS",
+    "Title": "Mathematics",
+    "Degree": "BS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "MAT-MIN",
+    "Title": "Mathematics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MCB-BS",
+    "Title": "Microbiology",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "MCB-MIN",
+    "Title": "Microbiology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MDS-BA",
+    "Title": "Media Studies",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "MDS-MIN",
+    "Title": "Media Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MEE-BS",
+    "Title": "Mechanical Engineering",
+    "Degree": "BS",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "MEE-MIN",
+    "Title": "Mechanical Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MES-MIN",
+    "Title": "Maine Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MET-MIN",
+    "Title": "Mechanical Engineering Tech",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MGMT-BS",
+    "Title": "Management",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "MGT-MIN",
+    "Title": "Management",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MHR-MIN",
+    "Title": "Mental Health & Rehabilitation",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MKT-BS",
+    "Title": "Marketing",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "MKT-MIN",
+    "Title": "Marketing",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MLB-BS",
+    "Title": "Molecular Biomedical Sciences",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "MLB-MIN",
+    "Title": "Molecular & Cellular Biology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MLS-BS",
+    "Title": "Medical Laboratory Sciences",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "MRB-MIN",
+    "Title": "Marine Biology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MRS-MIN",
+    "Title": "Medieval and Renaissance Std",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MSL-MIN",
+    "Title": "Military Science & Leadership",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MSS-MIN",
+    "Title": "Marxist and Socialist Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "MUP-BM",
+    "Title": "Music Performance",
+    "Degree": "BM",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "MUS-BA",
+    "Title": "Music",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "MUS-MIN",
+    "Title": "Music",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "NAN-MIN",
+    "Title": "Nanotechnology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "NAS-MIN",
+    "Title": "Native American Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "NEU-MIN",
+    "Title": "Neuroscience",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "NMD-BA",
+    "Title": "New Media",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "NMD-MIN",
+    "Title": "New Media",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "NUR-BS",
+    "Title": "Nursing",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "NVL-MIN",
+    "Title": "Naval Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "OED-MIN",
+    "Title": "Outdoor Leadership",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "OME-MIN",
+    "Title": "Ocean and Marine Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ORL-BS",
+    "Title": "Outdoor Recreation &Leadership",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "ORM-MIN",
+    "Title": "Outdoor Recreation",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PADM-MIN",
+    "Title": "Public Administration",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PAX-MIN",
+    "Title": "Peace and Reconciliation Stds",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PCS-BA",
+    "Title": "Psychology & Community Studies",
+    "Degree": "BA",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "PEG-MIN",
+    "Title": "Process Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PFS-MIN",
+    "Title": "Professional Skills",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PHI-BA",
+    "Title": "Philosophy",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "PHI-MIN",
+    "Title": "Philosophy",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PHY-BA",
+    "Title": "Physics",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "PHY-BS",
+    "Title": "Physics",
+    "Degree": "BS",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "PHY-MIN",
+    "Title": "Physics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PLG-MIN",
+    "Title": "Professional Languages",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "POS-BA",
+    "Title": "Political Science",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "POS-MIN",
+    "Title": "Political Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "POW-MIN",
+    "Title": "Power",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PRE-BUA",
+    "Title": "Pre-Business Admin",
+    "Degree": "",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "PRE-EGR",
+    "Title": "Pre-Engineering",
+    "Degree": "",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "PRE-EGR-EX",
+    "Title": "Pre-Engineering (Explorations)",
+    "Degree": "",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "PRM-MIN",
+    "Title": "Pre-Medical Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PRT-BS",
+    "Title": "Parks, Recreation & Tourism",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "PSY-BA",
+    "Title": "Psychology",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "PSY-MIN",
+    "Title": "Psychology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PTH-MIN",
+    "Title": "Political Theory",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "PWR-MIN",
+    "Title": "Professional Writing",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "QTM-MIN",
+    "Title": "Quantitative Methods",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "RAM-MIN",
+    "Title": "Resource & Agribusiness Mgmt",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "RED-BS",
+    "Title": "Rural Education",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "REE-MIN",
+    "Title": "Renewable Energy Econ & Policy",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "REN-MIN",
+    "Title": "Renewable Energy Engineering",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "RES-MIN",
+    "Title": "Religious Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "RML-BA",
+    "Title": "Romance Languages",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "ROB-MIN",
+    "Title": "Robotics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ROUX INST",
+    "Title": "Roux Inst - Northeastern Univ",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "RST-MIN",
+    "Title": "Renewable Energy Sci & Tech",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SAG-BS",
+    "Title": "Sustainable Agriculture",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "SAG-MIN",
+    "Title": "Sustainable Agriculture",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SBM-AS",
+    "Title": "Small Business Management",
+    "Degree": "AS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "SBM-BS",
+    "Title": "Small Business Management",
+    "Degree": "BS",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "SBM-MIN",
+    "Title": "Sm Bus Mg",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SEL-MIN",
+    "Title": "Secondary Education Licensure",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SFS-BS",
+    "Title": "Sustainable Food Systems",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "SFS-MIN",
+    "Title": "Sustainable Food Systems",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SML-BS",
+    "Title": "Sustainable Materials & Tech",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "SOC-BA",
+    "Title": "Sociology",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "SOC-MIN",
+    "Title": "Sociology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SOS-MIN",
+    "Title": "Soil Science",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SPA-BA",
+    "Title": "Spanish",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "SPA-MIN",
+    "Title": "Spanish",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SPC-MIN",
+    "Title": "Sports Communication Minor",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SPT-BS",
+    "Title": "Sport Management",
+    "Degree": "BSBA",
+    "College": "Maine Business School"
+  },
+  {
+    "Acad Plan": "SPT-MIN",
+    "Title": "Sports Technology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SST-MIN",
+    "Title": "Social Studies",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "STA-BA",
+    "Title": "Studio Art",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "STA-BFA",
+    "Title": "Studio Art",
+    "Degree": "BFA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "STA-MIN",
+    "Title": "Studio Art",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "STS-MIN",
+    "Title": "Statistics",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SUS-MIN",
+    "Title": "Sustainability",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "SWK-BS",
+    "Title": "Social Work",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "THE-BA",
+    "Title": "Theatre",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "THE-MIN",
+    "Title": "Theatre",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "THOR-MIN",
+    "Title": "Tourism, Hosp & Outdoor Rec",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "TTH-MIN",
+    "Title": "Theatre Technology",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "UND-EGR",
+    "Title": "Undeclared-Engineering",
+    "Degree": "",
+    "College": "Maine College of Engineering & Computing"
+  },
+  {
+    "Acad Plan": "UND-EXP",
+    "Title": "Undeclared-Explorations",
+    "Degree": "",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "UND-LAS",
+    "Title": "Undeclared (LAS)",
+    "Degree": "",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "UND-MACH",
+    "Title": "Undeclared (Machias)",
+    "Degree": "",
+    "College": "UMaine Machias"
+  },
+  {
+    "Acad Plan": "UND-NSFA",
+    "Title": "Undeclared (NSFA)",
+    "Degree": "",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "WGS-BA",
+    "Title": "Women's, Gender, Sexuality Std",
+    "Degree": "BA",
+    "College": "Liberal Arts & Sciences"
+  },
+  {
+    "Acad Plan": "WGS-MIN",
+    "Title": "Women's, Gender, Sexuality Std",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "WLE-BS",
+    "Title": "Wildlife Ecology",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "WTH-MIN",
+    "Title": "Wilderness Therapy",
+    "Degree": "minor",
+    "College": ""
+  },
+  {
+    "Acad Plan": "ZOL-BA",
+    "Title": "Zoology",
+    "Degree": "BA",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ZOL-BS",
+    "Title": "Zoology",
+    "Degree": "BS",
+    "College": "Earth, Life & Health Sciences"
+  },
+  {
+    "Acad Plan": "ZOL-MIN",
+    "Title": "Zoology",
+    "Degree": "minor",
+    "College": ""
+  }
+]

@@ -1,15 +1,19 @@
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useStudentData } from '../hooks/useStudentData';
 import '../styles.css';
 import { FiArrowLeft, FiSettings } from 'react-icons/fi';
-import { PieChart, Pie, Cell } from 'recharts';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { PieChart } from '@mui/x-charts/PieChart';
+import { ChartContainer } from '@mui/x-charts/ChartContainer';
+import { BarPlot } from '@mui/x-charts/BarChart';
+import NavBar from '../components/NavBar';
 
 export default function DegreeInfo() {
   const { studentID } = useParams();
-  const { studentData, loading, error } = useStudentData(studentID);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const program = searchParams.get('program');
+  const { studentData, loading, error } = useStudentData(studentID, program);
 
   if (loading) {
     return <div>Loading student data...</div>;
@@ -19,82 +23,131 @@ export default function DegreeInfo() {
     return <div>Error: {error}</div>;
   }
 
-  const totalRequirements = studentData.requirements;
-  const satisfiedRequirements = studentData.satisfied;
+  const totalRequirements = studentData.req_count;
+  const satisfiedRequirements = studentData.req_satisfied;
   const remainingRequirements = totalRequirements - satisfiedRequirements;
 
-  const data = [
-    { name: 'Satisfied', value: satisfiedRequirements },
-    { name: 'Remaining', value: remainingRequirements },
-  ];
+  console.log(program);
+  console.log(studentID);
 
+  const COLORS = ['#00274C', '#73BAE8'];
+
+  const getGroupClass = (group) => {
+    // switch (group.rqrmnt_group) {
+    //   case 'general_education': return 'general-education-group';
+    //   case 'major_requirements': return 'major-requirements-group';
+    //   case 'electives': return 'electives-group';
+    // }
+    return 'major-requirements-group';
+  };
+
+  // RequirementLists is not used so it can be removed or updated as needed
   function RequirementLists({ jsonData }) {
     if (!jsonData || !jsonData.groups) {
       return { satisfiedGroups: [], unsatisfiedGroups: [] }; // Return empty arrays if no data
     }
-
-    const satisfiedGroups = jsonData.groups.filter((group) => group.satisfied);
-    const unsatisfiedGroups = jsonData.groups.filter((group) => !group.satisfied);
-
-    return { satisfiedGroups, unsatisfiedGroups };
+    // You can expand this function to actually render something
   }
 
-  function PercentageSatisfied(satisfied, unsatisfied) {
-    if (!satisfied || !unsatisfied) return 0; // Prevent errors if lists are undefined
-    const total = satisfied.length + unsatisfied.length;
-    if (total === 0) return 0; // Prevent division by zero
-    return (satisfied.length / total)*100;
-  }
+  const satisfiedGroups = (studentData.groups || []).filter(group => group.satisfied);
+  const unsatisfiedGroups = (studentData.groups || []).filter(group => !group.satisfied);
 
-  const COLORS = ['#0088FE', '#FF8042'];
+  const total = 120;
+  const percentRemaining = total ? ((unsatisfiedGroups.length * 3) / total) * 100 : 0;
 
-  const { satisfiedGroups, unsatisfiedGroups } = RequirementLists({jsonData: studentData}); // Get lists
-  const percent = PercentageSatisfied(satisfiedGroups, unsatisfiedGroups);
+  const uData = [4000, 3000, 2000];
+  const xLabels = ['Required', 'Gen. Electives', 'In Major Electives'];
 
   return (
-    <div className="degree-progress-info">
-      {/* Header */}
-      <div className="header">
-        <FiArrowLeft className="back-button" onClick={() => navigate(`/degree-progress/${studentID}`)} />
-        <h2 className="header-title">Degree Information {studentID}</h2>
-        <FiSettings className="setting-icon" />
-      </div>
+    <div className="degree-progress-info full-page-layout">
+      <div className="main-content">
+        <div className="header">
+          <FiArrowLeft className="back-button" onClick={() => navigate(-1)} />
+          <h2 className="header-title">Degree Information {studentID}</h2>
+          <FiSettings className="setting-icon" />
+        </div>
+        <div className="NavbarHolder">
+          <NavBar />
+          <div className="content-justify">
+            <div className="scrollable-box">
+              <div className="box-grid">
+                {studentData.groups?.flatMap((group) =>
+                  group.requirements.map((requirement, index) => (
+                    <button
+                      key={`${group.rqrmnt_group}-${index}`}
+                      className={`boxbutton ${getGroupClass(group)}`}
+                      onClick={() =>
+                        navigate(
+                          `/elective-requirements/${studentID}?reqGroup=${group.rqrmnt_group}&reqNum=${requirement.requirement}`,
+                          {
+                            state: {
+                              studentData,
+                              group,
+                              requirement,
+                            },
+                          }
+                        )
+                      }
+                    >
+                      <div className="requirement-content">
+                        <div className="requirement-descr">
+                          {requirement.descr || group.label}
+                        </div>
+                        <div className="requirement-status">
+                          {requirement.rl_status ? (
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html:
+                                  requirement.rl_status +
+                                  (requirement.rl_descr ? `<br/>${requirement.rl_descr}` : ""),
+                              }}
+                            />
+                          ) : (
+                            <p>Status not available</p>
+                          )}
+                        </div>
+                      </div>
+                    </button>
+                  ))
+                )}
+              </div>
+            </div>
+          
 
-      <div className="content-justify">
-        {/* Scrollable Content */}
-        <div className="scrollable-box">
-          <div className="box-grid">
-            {studentData.groups.map((group, index) => (
-              <button
-                key={index}
-                className="boxbutton"
-                onClick={() => navigate(`/elective-requirements/${studentID}/${group.rqrmnt_group}`, { state: { studentData } })}
-              >
-                <div className="adjust-font-to-half-container-size">{group.label}</div>
-                <div className="adjust-font-to-half-container-size">
-                  {group.status ? <p dangerouslySetInnerHTML={{ __html: group.status }} /> : <p>Status not available</p>}
-                </div>
-              </button>
-            ))}
-          </div>
+
+        <div className="requirement-progress">
+          <ChartContainer
+            width={500}
+            height={300}
+            series={[
+              {
+                data: uData,
+                label: 'Credits',
+                type: 'bar',
+                color: COLORS[0],
+              },
+            ]}
+            xAxis={[{ scaleType: 'band', data: xLabels }]}
+          >
+            <BarPlot />
+          </ChartContainer>
+
+          <PieChart
+            series={[
+              {
+                data: [
+                  { id: 0, value: percentRemaining, label: 'Remaining', color: COLORS[0] },
+                  { id: 1, value: 100 - percentRemaining, label: 'Completed', color: COLORS[1] },
+                ],
+              },
+            ]}
+            width={400}
+            height={200}
+          />
         </div>
       </div>
-
-{/* Progress Section */}
-            <div className="requirement-progress">
-            <BarChart width={300} height={300} data={data}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="value" fill="#8884d8" />
-            </BarChart>
-            <ul className="percent-progress">
-          <li>{(percent ).toFixed(0)}% Complete</li>
-          <li>{((100 - (percent)) ).toFixed(0)}% Remaining</li>
-        </ul>
-      </div>
     </div>
+    </div>
+        </div>
   );
 }
