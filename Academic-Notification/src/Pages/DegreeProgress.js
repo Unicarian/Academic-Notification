@@ -4,6 +4,7 @@ import { FiArrowLeft, FiSettings } from 'react-icons/fi';
 import { useStudentData } from '../hooks/useStudentData';
 import '../styles.css';
 import user from '../img/user.png';
+import PDFGen from '../components/PDFGen';
 
 export default function DegreeProgress() {
   const { studentID } = useParams();
@@ -85,6 +86,8 @@ export default function DegreeProgress() {
       </div>
 
       <button className="summary-report">Generate Credit Summary Report</button>
+      <PDFGen></PDFGen>
+
     </div>
   );
 }
