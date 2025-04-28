@@ -38,7 +38,7 @@ export function useStudentPrograms(studentID) {
     useEffect(() => {
         const fetchStudentProgramData = async () => {
             try {
-                const response = await fetch(`http://theinfinity.rocks:8227/getStudentProgramRequirementStructure?generateNewIfNotFound=true&studentID=${studentID}  `);
+                const response = await fetch(`http://theinfinity.rocks:8227/getStudentProgramRequirementStructure?generateNewIfNotFound=true&studentID=${studentID}`);
                 if (!response.ok) {
                     throw new Error(`Failed to fetch student programs for ID: ${studentID}`);
                 }
