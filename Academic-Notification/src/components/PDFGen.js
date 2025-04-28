@@ -4,7 +4,7 @@ import { useStudentData, useStudentPrograms } from '../hooks/useStudentData';
 
 
 
-//Create new PDF
+//Create new PDF.
 //Not formatted perfectly, mainly just gets all the relevent data onto the page
 //Does NOT currently support multiple pages
 function generatePDF(studentData, programArray, name, gradDate){
